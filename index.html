@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>TTC Stations by yiuklh</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>TTC Stations</h1>
+        <p>Commuting time by minutes: Biking or Walking</p>
+
+        <p class="view"><a href="https://github.com/yiuklh/jsproj2hy">View the Project on GitHub <small>yiuklh/jsproj2hy</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/yiuklh/jsproj2hy/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/yiuklh/jsproj2hy/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/yiuklh/jsproj2hy">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="ttc-stations" class="anchor" href="#ttc-stations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TTC Stations</h3>
+
+<p>Commuting time by minutes: Biking or Walking
+~~ an Intro JavaScript and jQuery learning project by Kitty Yiu~~</p>
+
+<h3>
+<a id="intro" class="anchor" href="#intro" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Intro</h3>
+
+<p>Frequently there are subway problems at TTC stations delaying regular commutes.
+So a passenger decide to either bike or walk going to his/her destination.</p>
+
+<h3>
+<a id="beginner-level" class="anchor" href="#beginner-level" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Beginner-level</h3>
+
+<p>Only "Line 4 Sheppard-Yonge"</p>
+
+<p>Assuming these SIMPLE conditions</p>
+
+<ul>
+<li>Only Line 4 Sheppard-Yonge!</li>
+<li>Only Biking as mode of commute</li>
+<li>Always begin at the first station. Eg. It is Sheppard for Line 4</li>
+<li>Only One-way trip (A to B), no backtracking</li>
+<li>No transfer stations</li>
+<li>For simplicity: Time duration is express in minutes and as whole numbers that’s no decimals. 
+No need to convert time to include hours, or seconds.</li>
+</ul>
+
+<h3>
+<a id="intermediate-level" class="anchor" href="#intermediate-level" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Intermediate-level</h3>
+
+<p>Only "Line 4 Sheppard-Yonge"</p>
+
+<p>Assuming conditions</p>
+
+<ul>
+<li>Same conditions set in the Beginner-level</li>
+<li>Can choose either one mode of commute to begin: Biking OR Walking. </li>
+<li>No mixture of commuting modes on a trip.</li>
+</ul>
+
+<h3>
+<a id="advanced-level" class="anchor" href="#advanced-level" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Advanced-level</h3>
+
+<p>Only "Line 4 Sheppard-Yonge"</p>
+
+<p>Assuming conditions</p>
+
+<ul>
+<li>Add-on arrays for the remainder three routes: Line 1, Line 2, Line 3</li>
+<li>However, can ONLY CHOOSE ONE of the four line routes. 
+eg) Not go from a station to Line 1 to another station on Line 2</li>
+<li>Always begin at any station on a line and finish at another station on the same line, (A to B). 
+Therefore, no shortcut transferring to different line route.</li>
+<li>Only One-way trip</li>
+<li>No backtracking</li>
+</ul>
+
+<h3>
+<a id="extra-advanced-level" class="anchor" href="#extra-advanced-level" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Extra Advanced-level</h3>
+
+<p>Only "Line 4 Sheppard-Yonge"</p>
+
+<p>Assuming conditions</p>
+
+<ul>
+<li>Think of any “real-world” scenarios possible going from an origin to a destination such as ...</li>
+<li>Allows transfer station interchange to another line. ie) (A to B), (A to B to C ...)</li>
+<li>Only One-way trip</li>
+<li>No backtracking</li>
+<li><p>Can begin from any station going to any station for the trip. (Note: Counting can be tricky for those stations locate at the end points of a line and are not connecting to another line.)</p></li>
+<li><p>BONUS: Convert total minutes into more familiar time expression in “hours, minutes”</p></li>
+</ul>
+
+<h3>
+<a id="background-story" class="anchor" href="#background-story" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BACKGROUND STORY:</h3>
+
+<p>Q: How did I come up such idea?</p>
+
+<p>CBC Archives, August 14, 2003
+&lt; <a href="http://www.cbc.ca/archives/entry/2003-the-great-north-america-blackout">http://www.cbc.ca/archives/entry/2003-the-great-north-america-blackout</a> &gt;</p>
+
+<p>On August 14, 2003 at around after 4pm EST, there was a sudden blackout in the GTA. As more news emerged, it turned out to be the “Great North America Blackout” that affected most of Southern Ontario and Northeastern United States. Some communities in cities were without power for only 1 to 3 days, but some were affected for a week.</p>
+
+<p>The power outage in that evening rush hours had caused all the transits systems, included TTC, to immediately shut down. Many daily commuters who were in Downtown finding alternative ways return homes in the suburbs. Some luckier commuters were able to take the overcrowded replacement shuttle buses. While many had walked northbound (and uphill) along Yonge Street from Downtown going back homes. Stories from people had reported that walking from Union Station to Finch Station took at least 6 hours. Some commuters might had walked another 1 to 4 more hours for their trip to homes, depending on how far they reside away from the City of Toronto, which is commonly refer as “north of Steeles Avenue”.</p>
+
+<p>A: If similar situation to happen again, I certainly would like to know how long to "horsepower" commute in between the TTC stations.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>Based on Pavlo Kalyta's Walking TTC Stations Map &lt; <a href="http://www.blogto.com/city/2016/03/map_shows_walking_times_between_ttc_subway_stops/">http://www.blogto.com/city/2016/03/map_shows_walking_times_between_ttc_subway_stops/</a> &gt; + BikingToronto Modifed Biking Version &lt; <a href="http://bikingtoronto.com/blog/2016/03/map-of-biking-times-between-ttc-subway-stops/">http://bikingtoronto.com/blog/2016/03/map-of-biking-times-between-ttc-subway-stops/</a> &gt; </p>
+
+<p>Map Information: © 2016 Toronto Transit Commission &lt; <a href="https://www.ttc.ca/">https://www.ttc.ca/</a> &gt;</p>
+
+<h3>
+<a id="creative-commons" class="anchor" href="#creative-commons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creative Commons</h3>
+
+<p>This code learning project is licensed under the Creative Commons.
+&lt; <a href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</a> &gt;</p>
+
+<p>Creative Commons 2016. Thoughtfully &lt;/&gt; by kyiu (<a href="https://github.com/yiuklh" class="user-mention">@yiuklh</a>) with <a href="https://github.com/hackeryou" class="user-mention">@hackeryou</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/yiuklh">yiuklh</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
