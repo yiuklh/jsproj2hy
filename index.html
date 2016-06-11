@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lange="en">
+<head>
+    <title>Project2</title>
+    
+    <!--META TAGS-->
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<!--Google Font-->    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic' rel='stylesheet' type='text/css'>
+
+<!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">   
+
+<!--Normalize CSS-->
+    <link rel="stylesheet" href="css/normalize.css">    
+<!--My CSS-->
+    <link rel="stylesheet" href="css/proj2_styles.css">
+    
+</head>
+    
+<body>
+<div class="container">    
+<div class="content">     
+<!--HEADER-->
+    <nav id="top">
+        <a href="https://www.ttc.ca/" target="_blank"><img src="images/ttc_cs_twitter.png" title="ttc.ca" class="logo"></a> 
+    </nav>
+    
+    <header>
+        <h1>TTC Stations</h1>
+    </header>
+
+<!--Introduction Section-->
+    <section class="intro">    
+        <div>
+        <h2>Commuting time by minutes: Biking or Walking</h2>
+        <h3>~~ an Intro JavaScript and jQuery learning project by Kitty Yiu~~</h3>
+        </div><br>    
+        
+<!--    Beginner Level-->
+    <div>
+    <p>Frequently there are subway problems at TTC stations delaying regular commutes.<br> So a passenger decide to either bike or walk going to his/her destination.</p><br>
+        
+    <h2><span class="highlight">Beginner-level</span></h2>
+    <h3><span class="highlight">Only "Line 4 Sheppard-Yonge"</span></h3>    
+        
+    <p><em>Assuming these SIMPLE conditions</em></p>
+        
+    <ul>
+        <li><strong>Only Line 4 Sheppard-Yonge!</strong></li>   
+        <li><strong>Only Biking</strong> as mode of commute</li>  
+        <li>Always begin at the first station. Eg. It is Sheppard for Line 4</li>    
+        <li>Only One-way trip (A to B), no backtracking</li>
+        <li>No transfer stations</li>
+        <li>For simplicity: Time duration is express in minutes and as whole numbers that’s no decimals. No need to convert time to include hours, or seconds.</li>
+    </ul>    
+    </div>
+    </section><br>
+    
+<!--MAIN Section-->
+    <section class="main">
+        <h2>JavaScript and jQuery coding</h2>  
+        
+        <!--    draftwork draw a line, create 5 buttons-->
+        <div>
+        <button class="btn">Sheppard</button> 
+        <button class="btn">Bayview</button>
+        <button class="btn">Bessarion</button>
+        <button class="btn">Leslie</button>
+        <button class="btn">Don Mills</button>
+        </div>    
+        
+    </section><br>
+
+<!--Map Section-->
+    <section class="subwaymap">
+        <!--insert a TTC subway map jpeg-->
+        <img src="images/subwaymap_modify.jpg" class="image">
+    </section><br>
+
+<!--Background Story Section-->
+    <section class="story">
+        <p><em>Q: How did I come up such idea?</em></p>
+        
+        <h2 class="special"><strong>Background Story</strong></h2>
+        
+        <h3><a href="http://www.cbc.ca/archives/entry/2003-the-great-north-america-blackout" target="_blank"><span title="Access to CBC Digital Archives" class="highlight">CBC Archives, 2003: “Great North America Blackout”</span></a></h3>
+    
+<p class="special">On August 14, 2003 at around after 4pm EST, there was a sudden blackout in the GTA. As more news emerged, it turned out to be the “Great North America Blackout” that affected most of Southern Ontario and Northeastern United States. Some communities in cities were without power for only 1 to 3 days, but some were affected for a week. The power outage in that evening rush hours had caused all the transits systems, included TTC, to immediately shut down.</p>    
+    
+<p class="special">Many daily commuters who were in Downtown finding alternative ways return homes in the suburbs. Some luckier commuters were able to take the overcrowded replacement shuttle buses. While many had walked northbound (and uphill) along Yonge Street from Downtown going back homes. Stories from people had reported that walking from Union Station to Finch Station took at least 6 hours. Some commuters might had walked another 1 to 4 more hours for their trip to homes, depending on how far they reside away from the City of Toronto, which is commonly refer as “north of Steeles Avenue”.</p>
+        
+        <p><em>A: If similar situation to happen again, I certainly would like to know how long to "horsepower" commute in between the TTC stations.</em></p>     
+    
+        
+    <div class="topbutton">   
+        <a href="#top" title="Back to top" data-scroll><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i></a>
+    </div>     
+        
+    </section><br>
+    
+    </div><!--content class-->
+    
+    
+<!--FOOTER-->
+    <footer class="footer">
+        
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"></a><br>This code learning project is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons</a>.<br />Based on <a xmlns:dct="http://purl.org/dc/terms/" href="http://www.blogto.com/city/2016/03/map_shows_walking_times_between_ttc_subway_stops/" rel="dct:source" target="_blank">Pavlo Kalyta's Walking TTC Stations Map</a> + <a href="http://bikingtoronto.com/blog/2016/03/map-of-biking-times-between-ttc-subway-stops/" target="_blank">@BikingToronto Modifed Biking Version</a>
+        
+        <h5>Creative Commons <i class="fa fa-creative-commons fa-lg" aria-hidden="true"></i> 2016. Thoughtfully <i class="fa fa-code fa-lg" aria-hidden="true"></i> by kyiu (@yiuklh) with <a class="hy" href="http://hackeryou.com" target="_blank" title="HackerYou"> @hackeryou</a></h5>
+        
+        <h6>Map Information: &copy; 2016 Toronto Transit Commission<br>
+        Background Photo: "Sheppard-Yonge Station, 2006" by Craig J. White @Flickr</h6>
+    </footer>
+    </div><!--container class-->
+
+    
+<!--JavaScript and jQuery -->    
+<!--    https://developers.google.com/speed/libraries/#jquery-->    
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+    
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script> 
+
+<!--initialize smooth scroll-->
+    <script>
+        $(document).ready(function(){
+            smoothScroll.init({
+                offset: 50,
+                speed: 1000, //1 second=1000
+                updateURL: false,
+            });    
+        });
+    </script>            
+    
+<!--My JavaScript-->  
+    <script src="js/proj2_script.js"></script>
+ 
+</body>    
+</html>
