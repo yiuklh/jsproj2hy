@@ -76,13 +76,21 @@ No need to convert time to include hours, or seconds.</li>
 <p>Assuming conditions</p>
 
 <ul>
-<li>Add-on arrays for the remainder three routes: Line 1, Line 2, Line 3</li>
-<li>However, can ONLY CHOOSE ONE of the four line routes. 
-eg) Not go from a station to Line 1 to another station on Line 2</li>
-<li>Always begin at any station on a line and finish at another station on the same line, (A to B). 
-Therefore, no shortcut transferring to different line route.</li>
 <li>Only One-way trip</li>
 <li>No backtracking</li>
+<li>Review Key Idea:</li>
+  <ol>
+  <li>GET something: station buttons btn class</li>
+  <li>LISTEN something: button click event</li>
+  <li>DO something: Display info when button clicks</li>
+  </ol>
+<li><strong>NOTE: Setup user interface with two button classes. Eg) .btn1, .btn2 </strong></li>
+  <ul>
+  <li>Let clicks btn1 means variable choice1 to START</li>
+  <li>Let clicks btn2 means variable choice2 to STOP</li>
+  <li>Difference between the two stations is the total commute time</li>
+  <li>We are doing this because to have a “visual” understanding about how the codes work.</li>
+  </ul>
 </ul>
 
 <h3>
@@ -91,11 +99,24 @@ Therefore, no shortcut transferring to different line route.</li>
 <p>Assuming conditions</p>
 
 <ul>
+<li>Add-on arrays for the remainder three routes: Line 1, Line 2, Line 3</li>
+<li>However, can <u>ONLY CHOOSE ONE</u> of the four line routes. 
+eg) Not go from a station to Line 1 to another station on Line 2</li>
+<li>Always begin at any station on a line and finish at another station <u>on the same line</u>, (A to B). 
+Therefore, no shortcut transferring to different line route.</li>
+<li>Only One-way trip</li>
+<li>No backtracking</li>
+</ul>
+
+<h3>
+<a id="super-advanced-level" class="anchor" href="#super-advanced-level" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Super Advanced-level</h3>
+
+<ul>
 <li>Think of any “real-world” scenarios possible going from an origin to a destination such as ...</li>
 <li>Allows transfer station interchange to another line. ie) (A to B), (A to B to C ...)</li>
 <li>Only One-way trip</li>
 <li>No backtracking</li>
-<li><p>Can begin from any station going to any station for the trip. (Note: Counting can be tricky for those stations locate at the end points of a line and are not connecting to another line.)</p></li>
+<li><p>Can begin from any station going to any station for the trip. (Note: Counting can be tricky for those stations locate at the end points of a line and are not connecting to another line.)</p></li><br>
 <li><p>BONUS: Convert total minutes into more familiar time expression in “hours, minutes”</p></li>
 </ul>
 
