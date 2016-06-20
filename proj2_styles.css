@@ -1,0 +1,224 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*Clear Float*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* BODY - Sections
+-----------------------------------------*/
+body {
+    margin: 0 auto;
+    color: white;
+    font-family: 'Open Sans', sans-serif, 'Arial';
+    font-weight: bold;
+    font-size: 18px;
+    background: url(../images/line4photo.jpg) no-repeat fixed; 
+    background-size: cover; 
+    }
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+/*    background: rgba(0, 0, 0, 0.4);*/
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/*for slide toggle paragraph*/
+article {
+    padding-bottom: 1em;
+    border-bottom: 1px solid antiquewhite;
+}
+
+.hide {
+    display: none;
+}
+
+.readMore-toggle {
+    padding: 10px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.readMore-toggle:hover{
+    color:antiquewhite;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+
+/* HEADER 
+-----------------------------------------*/
+.logo {
+    float: right;
+    margin: 0;
+}
+
+header {
+    padding: 50px 50px 100px 50px;
+    font-weight: 300;
+}
+
+header h1 {
+    float: left;
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+/*For All Sections*/
+section {
+    padding: 10px 200px;
+}
+        
+
+/*<!--Introduction Section-->*/
+.intro {
+    
+}
+
+/*<!--Levels Section-->*/
+.levels {
+    
+}
+
+/*<!--MAIN Section-->*/
+.MAIN {
+    
+}
+
+/*Stations Buttons*/
+/*Let btn1 be the START station*/
+
+.btn1 {
+    display:inline-block;
+    width:125px;
+    height:125px;
+    border-radius: 50px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    line-height:100px;
+    border: 2px solid black;
+    padding: 5px;
+    text-decoration:none;
+}
+
+.btn1:hover{
+    color:#ffffff;
+    background: #ff0033;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+/*Let btn2 be the STOP station*/
+
+.btn2 {
+    display:inline-block;
+    width:125px;
+    height:125px;
+    border-radius: 50px;
+    background: dimgray;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height:100px;
+    border: 2px solid black;
+    padding: 5px;
+    text-decoration:none;
+}
+
+.btn2:hover{
+    color:#ffffff;
+    background: #ff0033;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+
+/*<!--Map Section-->*/
+.subwaymap {
+    background: whitesmoke;
+}
+
+/*Images*/
+.image {
+    display: inline-block;
+    width: 90%;
+    margin: 50px 25px;
+}
+
+/*<!--Background Story Section-->*/
+.story {
+    margin-bottom: 50px;
+}
+
+/*smooth-scroll buttons*/
+.topbutton {
+    float: right;
+    margin-bottom: 50px;
+}
+
+/* FOOTER 
+-----------------------------------------*/
+.footer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0 5px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: antiquewhite;
+    font-weight: 300;
+}
+
+.hy {
+    color: #d12026;
+}
+
+/*Text content styles*/
+.special {
+    color: antiquewhite;
+    font-weight: 300;
+}
+
+.highlight {
+    color: black;
+    background-color: yellow;
+    padding: 2px 5px;
+    }
+        
+.underline {
+    text-decoration: underline;
+    }
+
+li {
+    font-size: 18px;
+}
+
+/*styles for hyperlinks*/
+a { 
+    color: dimgray;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: whitesmoke;
+}
