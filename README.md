@@ -4,7 +4,7 @@ This is an introductory JavaScript learning project at @hackeryou.
 
 Project 2 focus on using jQuery to create simple front-end interactive user interfaces.
 
-In this project, I have chose the "TTC stations by minutes" as my topic. 
+In this project, I have chosen the "TTC stations by minutes" as my topic. 
 
 While my end goal is wanting to create on-screen clicks that would show a user the total commuting time (by biking or walking) in between any 2 or 3 stations that reflects the real-world senarios possible for a one-way trip.
 
