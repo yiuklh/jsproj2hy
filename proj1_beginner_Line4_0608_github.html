@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lange="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project1</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic' rel='stylesheet' type='text/css'>
+    
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif, 'Arial';
+        }
+        
+        .highlight {
+            background-color: yellow;
+        }
+        
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+    
+<body>
+    <div>
+        <h1>TTC Stations</h1> 
+        <h2>Commuting time by minutes: Biking or Walking</h2>
+        <h4>~~ an Intro JavaScript learning project by kyiu~~</h4>
+
+        <p>Frequently there are subway problems at TTC stations delaying regular commutes. So a passenger decide to either bike or walk going to his/her destination.</p>
+    </div>    
+    
+<!--    Beginner-->
+    <div>
+    <h3><span class="highlight">Beginner-level</span></h3>
+    <h3>Line 4 Sheppard and Yonge, Biking Only</h3>    
+        
+    <p><em>Assuming these SIMPLE conditions</em></p>
+        
+    <ul>
+        <li><strong>Only Line 4 Sheppard-Yonge!</strong></li>   
+        <li><strong>Only Biking</strong> as mode of commute</li>  
+        <li>Always begin at the first station. Eg. It is Sheppard for Line 4</li>    
+        <li>Only One-way trip (A to B), no backtracking</li>
+        <li>No transfer stations</li>
+        <li>For simplicity: Time duration is express in minutes and as whole numbers that’s no decimals. No need to convert time to include hours, or seconds.</li>
+    </ul>    
+    
+    <p>JS concepts to apply:</p>
+        
+    <ul>
+        <li>console log</li>   
+        <li>prompt asking user to input</li>  
+        <li>Variables</li>    
+        <li>Arrays</li>
+        <li>Objects: <strong>Properties</strong> with <em>Names</em> and <em>Values</em></li>
+        <li>for-in loop</li>
+        <li>forEach(function(){};, looping over an array</li>
+    </ul>  
+    <br>
+    </div>
+    
+<!--    Intermediate-->
+    <div>
+    <h3>Intermediate-level</span></h3>
+    <p><em>Assuming conditions</em></p>
+        
+    <ul>
+        <li>Same conditions set in the Beginner-level</li>   
+        <li>Can choose <span class="underline">either</span> one mode of commute to begin: Biking OR Walking. No mixture of commuting modes on a trip.</li>  
+    </div>
+    
+<!--    Advanced-->
+    <div>
+    <h3>Advanced-level</span></h3>
+    <p><em>Assuming conditions</em></p>
+        
+    <ul>
+        <li><span class="highlight">Add-on arrays for the remainder three routes: Line 1, Line 2, Line 3</span></li>   
+        <li>However, can <span class="underline">ONLY CHOOSE ONE</span> of the four line routes. eg) Not go from a station to Line 1 to another station on Line 2</li>
+        <li>Always begin at any station on a line and finish at another station <span>on the same line</span>, (A to B). Therefore, no shortcut transferring to different line route.</li>
+        <li>Only One-way trip</li>
+        <li>No backtracking</li>
+    </div>
+    
+<!--    Extra-Advanced-->
+    <div>
+    <h3>Extra Advanced-level</span></h3>
+    <p><em>Assuming conditions</em></p>
+        
+    <ul>
+        <li>Think of any “real-world” scenarios possible going from an origin to a destination such as ...</li>
+        <li>Allows transfer station interchange to another line. ie) (A to B),  (A to B to C ...)</li>
+        <li>Only One-way trip</li>
+        <li>No backtracking</li>
+        <li>Can begin from any station going to any station for the trip. <span class="highlight">(Note: Counting can be tricky for those stations locate at the end points of a line and are not connecting to another line.)</span></li>
+        
+    <!--BONUS-->
+        <li>BONUS: Convert total minutes into more familiar time expression in “hours, minutes”</li>
+    </div>    
+    
+<!--Formulated ideas-->
+<br>
+<div>  
+<p><em>Q: How did I come up such idea?</em></p>
+    
+<h4><em>BACKGROUND STORY:</em></h4> 
+<a href="http://www.cbc.ca/archives/entry/2003-the-great-north-america-blackout" target="_blank">CBC Archives, August 14, 2003</a>
+    
+<p>On August 14, 2003 at around after 4pm EST, there was a sudden blackout in the GTA. As more news emerged, it turned out to be the “Great North America Blackout” that affected most of Southern Ontario and Northeastern United States. Some communities in cities were without power for only 1 to 3 days, but some were affected for a week.</p>    
+    
+<p>The power outage in that evening rush hours had caused all the transits systems, included TTC, to immediately shut down. Many daily commuters who were in Downtown finding alternative ways return homes in the suburbs. Some luckier commuters were able to take the overcrowded replacement shuttle buses. While many had walked northbound (and uphill) along Yonge Street from Downtown going back homes. Stories from people had reported that walking from Union Station to Finch Station took at least 6 hours. Some commuters might had walked another 1 to 4 more hours for their trip to homes, depending on how far they reside away from the City of Toronto, which is commonly refer as “north of Steeles Avenue”.</p><br> 
+    
+<h4><em>Ideas to borrow from:</em></h4>
+<p>If similar situation to happen again, I certainly would like to know how long to "horsepower" commute in between TTC stations.</p>    
+    
+    <ul>
+        <li><a href="http://www.blogto.com/city/2016/03/map_shows_walking_times_between_ttc_subway_stops/" target="_blank">Pavlo Kalyta's Walking TTC Stations Map</a></li>
+        <li><a href="http://bikingtoronto.com/blog/2016/03/map-of-biking-times-between-ttc-subway-stops/" target="_blank">Modifed Biking Version by @BikingToronto</a></li>
+    </ul>    
+</div>    
+    
+<!--JavaScript coding below-->
+    <script>
+        //Array for Line 4 stations
+        var line4Stn = ['Sheppard', 'Bayview', 'Bessarion', 'Leslie', 'Don Mills'];
+        //console log them
+        console.log(line4Stn);
+        
+        //Array for biking minutes
+        var minBike4 = [9, 3, 4, 8];
+        console.log(minBike4);
+        
+        //Array for walking minute
+        var minWalk4 = [26, 11, 8, 19];
+        console.log(minWalk4);
+        
+        //Array maybe more organize put info into objects
+        var stations = [
+            {
+                stnName: 'Sheppard', 
+                minBike: 0,
+                minWalk: 0
+            },
+            
+             {
+                stnName: 'Bayview', 
+                minBike: 9,
+                minWalk: 26
+            },
+            
+             {
+                stnName: 'Bessarion', 
+                minBike: 3,
+                minWalk: 11
+            },
+            
+             {
+                stnName: 'Leslie', 
+                minBike: 4,
+                minWalk: 8
+            },
+            
+             {
+                stnName: 'Don Mills', 
+                minBike: 8,
+                minWalk: 19
+            }
+        ];
+        
+        //Beginner-Level//
+        var numStation = prompt('How many stations you need going to your destination?');
+        console.log(numStation);
+        //prompt input always return a string
+        
+        //There are only 5 stations on Line 4. Impose a condition that input cannot greater 5 and equal 0.
+        //= 0 false
+        //> 5 false
+        //<= 5 true
+        
+        //Conditional statements
+       if (numStation ===0 || numStation >5){
+            alert('Invalid input. Please count a number from Sheppard Station between 1 and 5');
+        };
+        
+        
+        //convert string to number. Make console log input into a number.
+        //NO need to var numStation since the variable already created at above code line171
+        numStaion = parseFloat('numStation'); 
+        console.log(numStation);
+        
+        //Pick the stations they will visit
+        //Get stations 1 through X. Let X be the number that user inputted.
+        var stationsToVisit = stations.slice(0, numStation);
+        console.log(stationsToVisit);
+        //.slice() select a part of an array, and returns the new array.
+        
+        //Create a total time variable
+        var totalBike = 0;
+        var totalWalk = 0;
+        
+        //loop over each station
+        stationsToVisit.forEach(function(stations){
+            //Add those values to the total
+            totalBike = totalBike + stations.minBike;
+            totalWalk = totalWalk + stations.minWalk;
+        });
+        
+        //Alert it! To display info to user
+        alert(`It would takes you ${totalBike} minutes to bike or ${totalWalk} minutes to walk going to ${stations[numStation-1].stnName}!`);
+        
+        //Intermediate-Level
+        
+        //Advanced-Level
+        
+        //Extra-Advanced-Level
+    </script>
+</body>    
+</html>
