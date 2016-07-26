@@ -5,7 +5,7 @@ Finalized Project3 was created based on building blocks from projects 1 & 2.
 
 - Project1: simple prompt interface. Line4 only and always start at the first station.
 - Project2: buttons interface. Line4 only but can start and end at any station.
-- Project3: Webmaps interface of all the stations for each of the Lines. One line per webmap.
+- Project3: Webmaps interface of all the stations for each of the Lines. Therefore, total four webmaps.
 
 
 
