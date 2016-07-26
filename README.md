@@ -3,7 +3,7 @@ Date: July 2016
 Finalized Project3 was created based on the 'building blocks' from projects 1 & 2 with SIMPLIFIED conditions. 
 It will post online later, once I completeed all quality checks.
 - *All projects are one-way commute (i.e. A to B); no backtrack, no short-cuts, no transfer. 
-- Must go consecutively, which is in some case considering "not practical" in real-world scenarios.
+- Must go consecutively, which is sometimes considering "not practical" in real-world scenarios.
 
 - Project1: simple prompt interface. Line4 only and always start at the first station.
 - Project2: buttons interface. Line4 only but can start and end at any station.
