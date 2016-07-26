@@ -1,6 +1,6 @@
 Date: July 2016
 
-Finalized Project3 was created based on building blocks from projects 1 & 2. 
+Finalized Project3 was created based on the 'building blocks' from projects 1 & 2. 
 - *All projects are one-way commute (i.e. A to B), no backtrack, no short-cuts, no transfer.
 
 - Project1: simple prompt interface. Line4 only and always start at the first station.
