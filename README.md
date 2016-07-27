@@ -1,7 +1,7 @@
-Date: July 2016
+Date: July 27, 2016
 
 Finalized Project3 was created based on the 'building blocks' from projects 1 & 2 with SIMPLIFIED conditions. 
-It will post online later, once I completeed all quality checks.
+It will post online later, once I completed all quality checks.
 - *All projects are one-way commute (i.e. A to B); no backtrack, no short-cuts, no transfer. 
 - Must go consecutively, which is sometimes considering "not practical" in real-world scenarios.
 
