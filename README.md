@@ -1,7 +1,7 @@
 Date: August 19, 2016
 
 Released as "horsepowerttc".
-There's an 'uncaught reference error, $ is not defined' that I can't identity the exact cause of problem.
+There's an 'uncaught reference error, $ is not defined' that I can't identify the exact cause(s) of problem.
 However, it still generally works.
 
 
