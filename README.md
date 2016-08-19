@@ -2,7 +2,7 @@ Date: August 19, 2016
 
 Released online as "horsepowerttc".
 There's an 'uncaught reference error, $ is not defined' that I can't identity the exact cause of problem.
-However, it is still generally works.
+However, it still generally works.
 
 
 Date: July 27, 2016
